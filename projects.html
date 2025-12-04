@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects — Dhvaj</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Dhvaj</a>
+      <nav class="nav" id="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1>Projects</h1>
+
+      <div class="grid">
+
+        <!-- UserOpenian Management System -->
+        <article class="card">
+          <h3>UserOpenian Management System</h3>
+          <p>
+            A user-management system designed for handling user records, editing user details, and managing
+            permissions. Includes features for adding, updating, and deleting user data with a clean UI.
+          </p>
+          <p><strong>Key Features:</strong></p>
+          <ul>
+            <li>User registration and editing</li>
+            <li>Delete and update operations</li>
+            <li>Simple and clean dashboard layout</li>
+          </ul>
+        </article>
+
+        <!-- Computer Shop Management System -->
+        <article class="card">
+          <h3>Computer Shop Management System</h3>
+          <p>
+            A small system made to help computer shops manage stock, generate bills, and track product details.
+            Good practice for CRUD operations and organizing data properly.
+          </p>
+          <p><strong>Key Features:</strong></p>
+          <ul>
+            <li>Product stock management</li>
+            <li>Billing / invoice generation</li>
+            <li>Daily and monthly sales records</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Made by Dhvaj</p>
+    </div>
+  </footer>
+
+  <script>
+    // Simple mobile navigation
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+
+    btn.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

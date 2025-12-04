@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dhvaj Dhyani — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Dhvaj</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <h1>Hello — I'm Dhvaj</h1>
+      <p class="lead">Student | Tutor | Web Developer. I build accessible web pages and helpful management systems.</p>
+      <p class="cta">
+        <a class="btn" href="projects.html">See Projects</a>
+        <a class="btn ghost" href="contact.html">Contact Me</a>
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul class="skill-list">
+        <li>HTML &amp; CSS</li>
+        <li>JavaScript</li>
+        <li>Git &amp; GitHub</li>
+        <li>Teaching Programming</li>
+      </ul>
+    </section>
+
+    <!-- UPDATED FEATURED PROJECTS SECTION -->
+    <section class="featured">
+      <h2>Featured Projects</h2>
+      <div class="grid">
+
+        <article class="card">
+          <h3>UserOpenian Management System</h3>
+          <p>A user-management system with add, update, delete, and search features. Clean dashboard layout for easy user handling.</p>
+          <p><a href="projects.html">Read more →</a></p>
+        </article>
+
+        <article class="card">
+          <h3>Computer Shop Management System</h3>
+          <p>Inventory and billing system for a computer shop. Tracks stock, generates invoices, and stores daily/monthly records.</p>
+          <p><a href="projects.html">Read more →</a></p>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Made by Dhvaj</p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    btn.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

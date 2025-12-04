@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Dhvaj</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Dhvaj</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="profile">
+      <h1>About Me</h1>
+      <p>Hi — I'm Dhvaj. I'm starting my internship as a tutor and web developer. I enjoy building accessible web pages and teaching programming to blind students.</p>
+
+      <h2>Education & Experience</h2>
+      <ul>
+        <li>Studying TYBCA — Server Side Web Programming, Data Structures</li>
+        <li>Experience with HTML, CSS, JavaScript, Python</li>
+        <li>Familiar with Git & GitHub, classroom management</li>
+      </ul>
+
+      <h2>Interests</h2>
+      <p>Web accessibility, small tools, teaching, and building helpful projects for students.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Made by Dhvaj — <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
